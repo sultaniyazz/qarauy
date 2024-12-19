@@ -12,9 +12,6 @@ const RootLayout = () => {
     const dest = useSelector((state) => state.destinationsSlice.destinations);
     const modal = useSelector((state) => state.pageActionSlice.modal);
 
-    console.log(modal);
-    console.log(dest);
-
     return (
         <div className="w-[100vw] select-none overflow-hidden duration-300 h-[100vh] text-[1.1vw]">
             <div className="h-[12vh] max-sm:h-[10vh] relative z-50"><Header /></div>

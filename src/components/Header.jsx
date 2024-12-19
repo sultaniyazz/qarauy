@@ -13,7 +13,6 @@ import Languages from "./Languages";
 const Header = () => {
     const dispatch = useDispatch();
     const modal = useSelector(state => state.pageActionSlice.modal);
-    console.log(modal);
 
 
     return (

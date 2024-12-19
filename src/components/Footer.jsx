@@ -46,9 +46,9 @@ const Footer = () => {
                 <div className='grid gap-[1vw] max-md:w-[85vw]'>
                     <h1 className="font-semibold text-[1.5vw]  max-md:text-[4vw]">Newsletter</h1>
                     <div className="flex flex-col gap-[1vw] max-md:gap-[2vw]">
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab quibusdam vitae</span>
+                        <span className="max-md:text-[2vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab quibusdam vitae</span>
                         <div>
-                            <input className="outline-none text-black px-[.5vw] max-md:px-[1vw] py-[.8vw] max-md:py-[2vw] rounded w-[20vw] max-md:w-[50vw]" type="text" placeholder="example@email.com" />
+                            <input className="outline-none text-black px-[.5vw] max-md:px-[1vw] py-[.8vw] max-md:py-[2vw] rounded w-[20vw] max-md:w-[50vw] placeholder:max-md:text-[2vw]" type="text" placeholder="example@email.com" />
                         </div>
                     </div>
                 </div>

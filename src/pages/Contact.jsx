@@ -9,8 +9,12 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import { useInView } from "react-intersection-observer";
 import khiva from '../images/khiva.jpg'
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+    const page = useLocation()
+    console.log(page.pathname);
+
 
     const { ref: ref1, inView: inView1 } = useInView({
         threshold: 0.5,
@@ -54,7 +58,7 @@ const Contact = () => {
     });
     return (
         <div>
-            <div>
+            <div className={`${location.pathname == '/' ? "hidden" : ""}`}>
                 <Banner img={khiva} h1={'Contact'} p={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati possimus magnam ut?'} />
             </div>
             <div className='flex justify-center flex-col items-center py-[5vw]'>
@@ -171,7 +175,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div>
+            <div className={`${location.pathname == '/' ? "hidden" : ""}`}>
                 <Footer />
             </div>
         </div>
