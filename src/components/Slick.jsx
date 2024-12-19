@@ -30,7 +30,7 @@ function Slick({ dest }) {
 
     return (
         <div className="slider-container">
-            <Slider {...settings} className="flex items-center p-[1vw] gap-[1vw]">
+            <Slider {...settings} className="flex items-center gap-[1vw]">
                 {load
                     ?
                     skeleton.map((_, index) => (

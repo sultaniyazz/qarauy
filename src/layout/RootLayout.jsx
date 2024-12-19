@@ -33,7 +33,7 @@ const RootLayout = () => {
                     <div className='md:hidden'><Languages /></div>
                 </div>
             </div>
-            <div className="h-[88vh] relative z-30 overflow-y-auto"><Outlet /></div>
+            <div className="h-[88vh] max-md:h-[90vh] relative z-30 overflow-y-auto"><Outlet /></div>
         </div>
     );
 };

@@ -9,7 +9,7 @@ const Destinations = () => {
     console.log(destinations);
 
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <div><Banner img={dest} h1={"Lorem ipsum dolor sit."} p={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, architecto?"} /></div>
             <div className='flex flex-col gap-[2vw] max-md:gap-[4vw] justify-center items-center w-full px-[4vw] py-[5vw]'>
                 <div className='text-[1.5vw] max-md:text-[2vw] text-center'>

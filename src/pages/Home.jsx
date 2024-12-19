@@ -56,7 +56,7 @@ const Home = () => {
                     <h1 className='max-md:text-[6vw]'>Our Destinations</h1>
                     <span className='text-center text-[2vw] max-md:text-[4vw]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
                 </div>
-                <div><Slick dest={dest} /></div>
+                <div className="px-[3vw]"><Slick dest={dest} /></div>
             </div>
             <div>
                 <Contact />
