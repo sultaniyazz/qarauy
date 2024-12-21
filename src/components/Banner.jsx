@@ -40,15 +40,15 @@ const Banner = ({ img, h1, p }) => {
                             <span><TiWeatherPartlySunny /></span>
                         </div>
                         <div ref={ref4} className={`${inView1 ? "opacity-100 top-0" : "opacity-0 top-[2vw]"} transition-all duration-1000 relative md:w-[80%] max-md:w-[90%]  justify-center max-md:shadow-md flex p-[1vw] max-md:py-[2vw] bg-white rounded-[1vw]`}>
-                            <div className="flex-1 flex justify-center items-center text-[2vw] max-md:text-[6vw] text-black">
-                                <span className="text-[3vw] max-md:text-[6vw]"><MdPeopleAlt /></span>
+                            <div className="flex-1 flex justify-center items-center text-[2vw] max-md:text-[5vw] text-black">
+                                <span className="text-[3vw] max-md:text-[5vw]"><MdPeopleAlt /></span>
                                 <span>123</span>
                             </div>
-                            <div className="flex items-center gap-[.5vw] flex-1 text-[2vw] max-md:text-[5vw] justify-center">
+                            <div className="flex items-center gap-[.5vw] flex-1 text-[2vw] max-md:text-[4vw] justify-center">
                                 <span>Nukus</span>
                                 <span><FaLocationArrow /></span>
                             </div>
-                            <div className="flex-1 flex text-[1.4vw] max-md:text-[4vw] items-center gap-[1vw]">
+                            <div className="flex-1 flex text-[1.4vw] max-md:text-[3vw] items-center gap-[1vw]">
                                 <span className="flex gap-[.3vw] items-center">
                                     <span><GiJerusalemCross /></span>
                                     <p>USD</p>
