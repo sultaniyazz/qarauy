@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { getAllDestData } from './api/request'
-import { createBrowserRouter, createRoutesFromChildren, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Destinations from './pages/Destinations'
+import './config/i18next'
 
 const App = () => {
 

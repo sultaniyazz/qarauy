@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   modal: false,
+  changeLanguage: false,
 };
 
 const pageActionSlice = createSlice({
@@ -11,8 +12,11 @@ const pageActionSlice = createSlice({
     showModal: (state) => {
       state.modal = !state.modal;
     },
+    showLanguage: (state) => {
+      state.changeLanguage = !state.changeLanguage;
+    },
   },
 });
 
-export const { showModal } = pageActionSlice.actions;
+export const { showModal, showLanguage } = pageActionSlice.actions;
 export default pageActionSlice.reducer;

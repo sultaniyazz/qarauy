@@ -12,7 +12,6 @@ import Contact from './Contact';
 
 const Home = () => {
     const dest = useSelector(state => state.destinationsSlice.destinations)
-    console.log(dest);
 
     return (
         <div>

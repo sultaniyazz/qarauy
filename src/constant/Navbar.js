@@ -1,17 +1,17 @@
 export const navbar = [
   {
     id: 1,
-    title: "Home",
+    title: "home",
     path: "/",
   },
   {
     id: 2,
-    title: "Destinations",
+    title: "destinations",
     path: "/destinations",
   },
   {
     id: 3,
-    title: "Contact",
+    title: "contact",
     path: "/contact",
   },
 ];

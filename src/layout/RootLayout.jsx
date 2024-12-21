@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import { showModal } from '../features/pageActionSlice';
 import Languages from '../components/Languages';
-import { GoArrowRight } from 'react-icons/go';
 
 const RootLayout = () => {
     const dispatch = useDispatch();

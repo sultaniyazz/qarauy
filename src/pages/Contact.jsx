@@ -13,7 +13,6 @@ import { useLocation } from "react-router-dom";
 
 const Contact = () => {
     const page = useLocation()
-    console.log(page.pathname);
 
 
     const { ref: ref1, inView: inView1 } = useInView({
