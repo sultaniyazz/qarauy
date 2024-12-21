@@ -18,7 +18,7 @@ const Destinations = () => {
                     <span className='max-md:text-[8vw] text-[4vw]'>All Destinations</span>
                     <p className='text-[2.5vw] max-md:text-[5vw]'>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div className='p-[1vw] w-full gap-[2vw] max-md:gap-[10vw] grid grid-cols-4 max-md:grid-cols-1'>
+                <div className='p-[1vw] w-full gap-[2vw] max-md:gap-[10vw] grid grid-cols-4 max-md:grid-cols-2'>
                     {load ?
                         newArr.map((_, index) => (
                             <div key={index} className='w-full flex flex-col  justify-cente rounded-[1vw]'>
@@ -43,15 +43,15 @@ const Destinations = () => {
                         destinations.map((dest) => (
                             <div key={dest.id} className='w-full flex flex-col  bg-red-500 justify-cente rounded-[1vw]'>
                                 <div>
-                                    <img className='w-full h-[25vw] max-md:h-[100vw] object-cover rounded-t-[1vw]' src={dest.image} alt="" />
+                                    <img className='w-full h-[25vw] max-md:h-[60vw] object-cover rounded-t-[1vw]' src={dest.image} alt="" />
                                 </div>
                                 <div className='py-[1vw] max-md:py-[2vw] px-[2vw] justify-between h-full gap-[.8vw] max-md:gap-[3vw] flex flex-col bg-white border-b-black border-[.1vw] rounded-b-[1vw]'>
                                     <div>
-                                        <h1 className='text-[2vw] max-md:text-[10vw]'>{dest.country}</h1>
-                                        <p className='max-md:text-[5vw]'>{dest.description}</p>
+                                        <h1 className='text-[2vw] max-md:text-[5vw]'>{dest.country}</h1>
+                                        <p className='max-md:text-[3vw]'>{dest.description}</p>
                                     </div>
                                     <div className='w-full flex justify-end'>
-                                        <button className='bg-orange-500 active:scale-95 max-md:text-[6vw] max-md:px-[10vw] px-[2vw] py-[.3vw] text-white font-bold rounded-full'>view</button>
+                                        <button className='bg-orange-500 active:scale-95 max-md:text-[3vw] max-md:px-[5vw] px-[2vw] py-[.3vw] text-white font-bold rounded-full'>view</button>
                                     </div>
                                 </div>
 
