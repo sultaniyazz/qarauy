@@ -2,8 +2,13 @@ import React from 'react'
 import { navbar } from '../constant/Navbar'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useDispatch } from 'react-redux'
+import { showModal } from '../features/pageActionSlice'
 
 const Navbar = () => {
+
+
+    const dispatch = useDispatch()
     const { t } = useTranslation()
     return (
         <div className='flex items-center gap-[1vw] max-md:gap-[2vw]'>
