@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Languages from "./Languages";
 import { IoIosArrowUp } from "react-icons/io";
 import { useTranslation } from "react-i18next";
+import Categories from "./Categories";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -23,8 +24,7 @@ const Header = () => {
                 <div className="flex items-center gap-[1vw] max-md:hidden">
                     <Navbar />
                     <button className="text-[1.2vw] font-medium flex items-center gap-[.2vw]">
-                        <span>{t('categories')}</span>
-                        <IoIosArrowUp className="rotate-180" />
+                        <span><Categories /></span>
                     </button>
                 </div>
                 <div className="relative max-md:hidden">

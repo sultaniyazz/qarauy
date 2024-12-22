@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import { showModal } from '../features/pageActionSlice';
 import Languages from '../components/Languages';
+import Categories from '../components/Categories';
 
 const RootLayout = () => {
     const dispatch = useDispatch();
@@ -16,17 +17,15 @@ const RootLayout = () => {
             <div className={`absolute bg-white px-[4vw] flex-col gap-[2vw] flex items-center w-full max-h-full py-[1vw] duration-500 z-40 ${modal ? "translate-y-0 border-b-[.1vw] border-gray-300" : "-translate-y-[100%]"}`} >
                 <div className='w-full'>
                     <div className='flex max-md:flex-col justify-between w-full md:hidden max-md:py-[3vw] max-md:gap-[3vw] border-b-[.1vw]'>
-                        <div onClick={() => dispatch(showModal())} className='md:hidden'><Navbar /></div>
+                        <div onClick={() => dispatch(showModal())} className='md:hidden flex items-center gap-[1vw]'><Navbar /><Categories /></div>
                         <div className='md:hidden w-max max-md:py-[2vw]'><Languages /></div>
                     </div>
-                    <div className='flex items-start max-md:py-[1vw]  flex-col max-md:gap-[2vw] gap-[1vw]'>
+                    <div className='flex items-start max-md:py-[2vw]  flex-col max-md:gap-[2vw] gap-[1vw]'>
                         <h1 className="font-semibold text-[1.5vw] max-md:text-[5vw]">Company</h1>
                         <div className='flex flex-col max-md:gap-[1vw] gap-[.5vw] text-[1.3vw] max-md:text-[4vw]'>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>About Us</span>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>Contact Us</span>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>Privacy Policy</span>
-                            <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>Term & Condition</span>
-                            <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>FAQ & Help</span>
                         </div>
                     </div>
                 </div>
