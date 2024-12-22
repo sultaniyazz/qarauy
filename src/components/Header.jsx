@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { showModal } from "../features/pageActionSlice";
 import Navbar from "./Navbar";
-
 import Languages from "./Languages";
 import { IoIosArrowUp } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const { t } = useTranslation();
 
     const dispatch = useDispatch();
     const modal = useSelector((state) => state.pageActionSlice.modal);
@@ -22,7 +23,7 @@ const Header = () => {
                 <div className="flex items-center gap-[1vw] max-md:hidden">
                     <Navbar />
                     <button className="text-[1.2vw] font-medium flex items-center gap-[.2vw]">
-                        <span>Categories</span>
+                        <span>{t('categories')}</span>
                         <IoIosArrowUp className="rotate-180" />
                     </button>
                 </div>

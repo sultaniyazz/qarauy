@@ -8,18 +8,18 @@ i18next
     .use(initReactI18next)
     .init({
         resources: {
-            eng: {
+            english: {
                 translation: eng
             },
-            qqr: {
+            qaraqalpaq: {
                 translation: qqr
             },
-            rus: {
+            russian: {
                 translation: rus
             },
 
         },
-        fallbackLng: 'eng',
+        fallbackLng: 'english',
         interpolation: {
             escapeValue: false
         }

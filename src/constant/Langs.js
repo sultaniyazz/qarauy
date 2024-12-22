@@ -1,4 +1,4 @@
-export const languages = [
+export const langNav = [
   {
     id: 1,
     title: "English",
