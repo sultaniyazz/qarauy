@@ -17,7 +17,10 @@ const RootLayout = () => {
             <div className={`absolute bg-white px-[4vw] flex-col gap-[2vw] flex items-center w-full max-h-full py-[1vw] duration-500 z-40 ${modal ? "translate-y-0 border-b-[.1vw] border-gray-300" : "-translate-y-[100%]"}`} >
                 <div className='w-full'>
                     <div className='flex max-md:flex-col justify-between w-full md:hidden max-md:py-[3vw] max-md:gap-[3vw] border-b-[.1vw]'>
-                        <div onClick={() => dispatch(showModal())} className='md:hidden flex items-center gap-[1vw]'><Navbar /><Categories /></div>
+                        <div className='flex items-center gap-[1vw]'>
+                            <div onClick={() => dispatch(showModal())} className='md:hidden flex items-center gap-[1vw]'><Navbar /></div>
+                            <div><Categories /></div>
+                        </div>
                         <div className='md:hidden w-max max-md:py-[2vw]'><Languages /></div>
                     </div>
                     <div className='flex items-start max-md:py-[2vw]  flex-col max-md:gap-[2vw] gap-[1vw]'>
