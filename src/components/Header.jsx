@@ -19,7 +19,7 @@ const Header = () => {
                 <AiFillHome />
                 <span>QaraUy</span>
             </div>
-            <div className="flex items-center gap-[2vw]">
+            <div className="flex items-center gap-[1vw]">
                 <div className="flex items-center gap-[1vw] max-md:hidden">
                     <Navbar />
                     <button className="text-[1.2vw] font-medium flex items-center gap-[.2vw]">
@@ -30,17 +30,19 @@ const Header = () => {
                 <div className="relative max-md:hidden">
                     <Languages />
                 </div>
-                <div className="flex items-center gap-[1vw]">
-                    <button className="border-[.1vw] max-md:text-[4vw] font-semibold rounded border-black active:scale-95 px-[2vw]">
-                        Log In
-                    </button>
-                    <button className="border-[.1vw] max-md:text-[4vw] font-semibold rounded border-black active:scale-95 px-[2vw] text-white bg-black">
-                        Sign Up
+                <div className="flex items-center max-md:gap-[2vw] gap-[1vw]">
+                    <div className="flex items-center gap-[1vw]">
+                        <button className="border-[.1vw] max-md:text-[4vw] font-semibold rounded border-black active:scale-95 px-[2vw]">
+                            Log In
+                        </button>
+                        <button className="border-[.1vw] max-md:text-[4vw] font-semibold rounded border-black active:scale-95 px-[2vw] text-white bg-black">
+                            Sign Up
+                        </button>
+                    </div>
+                    <button onClick={() => dispatch(showModal())} className="text-[1.5vw] max-md:text-[6vw] active:scale-95">
+                        {modal ? <AiOutlineClose /> : <AiOutlineMenu />}
                     </button>
                 </div>
-                <button onClick={() => dispatch(showModal())} className="text-[1.5vw] max-md:text-[6vw] active:scale-95">
-                    {modal ? <AiOutlineClose /> : <AiOutlineMenu />}
-                </button>
             </div>
         </div>
     );

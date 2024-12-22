@@ -15,9 +15,9 @@ const RootLayout = () => {
             <div className="h-[12vh] max-sm:h-[10vh] relative z-50"><Header /></div>
             <div className={`absolute bg-white px-[4vw] flex-col gap-[2vw] flex items-center w-full max-h-full py-[1vw] duration-500 z-40 ${modal ? "translate-y-0 border-b-[.1vw] border-gray-300" : "-translate-y-[100%]"}`} >
                 <div className='w-full'>
-                    <div className='flex justify-between w-full py-[2vw] border-b-[.1vw]'>
-                        <div onClick={() => dispatch(showModal())} className='md:hidden text-[2vw]'><Navbar /></div>
-                        <div className='md:hidden'><Languages /></div>
+                    <div className='flex max-md:flex-col justify-between w-full md:hidden max-md:py-[3vw] max-md:gap-[3vw] border-b-[.1vw]'>
+                        <div onClick={() => dispatch(showModal())} className='md:hidden'><Navbar /></div>
+                        <div className='md:hidden w-max max-md:py-[2vw]'><Languages /></div>
                     </div>
                     <div className='flex items-start max-md:py-[1vw]  flex-col max-md:gap-[2vw] gap-[1vw]'>
                         <h1 className="font-semibold text-[1.5vw] max-md:text-[5vw]">Company</h1>
