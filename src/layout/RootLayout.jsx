@@ -20,8 +20,8 @@ const RootLayout = () => {
                         <div className='md:hidden'><Languages /></div>
                     </div>
                     <div className='flex items-start max-md:py-[1vw]  flex-col max-md:gap-[2vw] gap-[1vw]'>
-                        <h1 className="font-semibold text-[1.5vw] max-md:text-[4vw]">Company</h1>
-                        <div className='flex flex-col max-md:gap-[1vw] gap-[.5vw] text-[1.3vw] max-md:text-[3vw]'>
+                        <h1 className="font-semibold text-[1.5vw] max-md:text-[5vw]">Company</h1>
+                        <div className='flex flex-col max-md:gap-[1vw] gap-[.5vw] text-[1.3vw] max-md:text-[4vw]'>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>About Us</span>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>Contact Us</span>
                             <span className='hover:scale-95 duration-200 flex items-center gap-[.3vw] w-max'>Privacy Policy</span>

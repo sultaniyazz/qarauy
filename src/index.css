@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .active-link {
-  color: green;
+  color: orangered;
   font-weight: 600;
 }
 .hover-link {
